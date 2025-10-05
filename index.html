@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transportadora FIFO - Simulador de Entregas</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="data:,">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Simulador de Entregas</h1>
+            <p>Um sistema de gerenciamento de pacotes usando a estrutura de fila (FIFO).</p>
+        </header>
+
+        <div class="controls">
+            <button id="add-package-btn">Adicionar Pacote à Fila</button>
+            <button id="deliver-package-btn">Realizar Próxima Entrega</button>
+        </div>
+
+        <div id="status-message" class="status"></div>
+
+        <main class="content-area">
+            <section class="queue-section">
+                <h2><span id="queue-count">0</span> Pacotes na Fila</h2>
+                <div id="queue-list" class="package-list">
+                    <p class="empty-message">A fila de entregas está vazia.</p>
+                </div>
+            </section>
+
+            <section class="history-section">
+                <h2>Histórico de Entregas</h2>
+                <div id="history-list" class="package-list">
+                    <p class="empty-message">Nenhum pacote foi entregue ainda.</p>
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
